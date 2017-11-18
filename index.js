@@ -6,5 +6,7 @@ function findMatching(drivers,name){
 };
 
 function fuzzyMatch(drivers, name){
-  return drivers.substring("Sa");
+  return drivers.filter(function(driverName){
+    return driverName.slice(0,2) == 'Sa';
+  });
 }
